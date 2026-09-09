@@ -129,9 +129,33 @@ RFM 점수 = Recency 등급 × 0.2
 
 ## 실행 방법
 
+### Google Colab
+
+1. [Google Colab에서 노트북 열기](https://colab.research.google.com/github/bonggu0102/rfm-customer-segmentation/blob/main/RFM_%EB%B6%84%EC%84%9D_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.ipynb)를 눌러 노트북을 엽니다.
+2. 노트북 맨 위에 코드 셀을 추가하고 아래 명령을 실행합니다.
+
+```python
+!git clone https://github.com/bonggu0102/rfm-customer-segmentation.git
+%cd rfm-customer-segmentation
+```
+
+3. 노트북의 셀을 위에서부터 순서대로 실행합니다.
+
+Colab에는 분석에 사용한 주요 라이브러리가 기본으로 설치되어 있습니다. 라이브러리 오류가 발생하는 경우에만 다음 명령을 실행합니다.
+
+```python
+%pip install -r requirements.txt
+```
+
+Colab에서는 노트북 환경이 이미 실행 중이므로 `jupyter notebook` 명령을 입력할 필요가 없습니다.
+
+### 로컬 환경
+
 ```bash
+git clone https://github.com/bonggu0102/rfm-customer-segmentation.git
+cd rfm-customer-segmentation
 pip install -r requirements.txt
 jupyter notebook RFM_분석_포트폴리오.ipynb
 ```
 
-노트북과 `customer_data.csv`를 같은 폴더에 두면 전체 분석을 실행할 수 있습니다.
+노트북과 `customer_data.csv`가 같은 프로젝트 폴더에 있어야 전체 분석을 실행할 수 있습니다.
